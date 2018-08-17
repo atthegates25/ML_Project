@@ -36,6 +36,6 @@ class LabelCountEncoder(object):
         return(column)
 
 
-    def fit_transform(self, column):
-        self.fit(column)
+    def fit_transform(self, column, rank_asc=True, rank_start_1=True):
+        self.fit(column, rank_asc, rank_start_1)
         return self.__transform(column)
